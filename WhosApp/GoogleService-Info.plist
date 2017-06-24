@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>371559861322-tufglf3p42103fki4lge6galhiniv2r0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.371559861322-tufglf3p42103fki4lge6galhiniv2r0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCziZj4nlCT_u7PlK8grpR8ATkZsnxxkhE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>371559861322</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.zhiyuan.WhosApp</string>
+	<key>PROJECT_ID</key>
+	<string>whosapp-cc3d7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>whosapp-cc3d7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:371559861322:ios:4f069a0e0a405c14</string>
+	<key>DATABASE_URL</key>
+	<string>https://whosapp-cc3d7.firebaseio.com</string>
+</dict>
+</plist>

@@ -8,15 +8,31 @@
 
 import UIKit
 import CoreData
+import CoreLocation
+import Firebase
+import FirebaseDatabase
+import NotificationCenter
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
 
+    var locationManager: CLLocationManager?
+    var coordiantes: CLLocationCoordinate2D?
 
+    /*For backendless Setup
+    let APP_ID = "";
+    let SECRET_KEY = "";
+    let VERSION_NUM = "v1";*/
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        //backendless!.initApp(APP_ID, secret: SECRET_KEY, version: VERSION_NUM)
+        FIRApp.configure()
+        FIRDatabase.database().persistenceEnabled = true
+        
+        
         return true
     }
 
