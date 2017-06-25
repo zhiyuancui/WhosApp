@@ -9,8 +9,9 @@
 import UIKit
 import FirebaseAuth
 import MBProgressHUD
+import MobileCoreServices
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     
     
@@ -54,6 +55,31 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func CameraBtnPressed(_ sender: Any) {
+        let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let camera = Camera(delegate_: self)
+        
+        let takePhoto = UIAlertAction(title: "Take Photo", style:.default) {
+            (alert: UIAlertAction!) in
+            camera.PresentPhotoCamera(target: self, canEdit: true)
+        }
+        
+        let sharePhoto = UIAlertAction(title: "Photo Library", style:.default) {
+            (alert: UIAlertAction!) in
+            
+            camera.PresentPhotoLibrary(target: self, canEdit: true)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style:.cancel) {
+            (alert: UIAlertAction!) in
+            
+        }
+        
+        optionMenu.addAction(takePhoto)
+        optionMenu.addAction(sharePhoto)
+        optionMenu.addAction(cancelAction)
+        
+        self.present(optionMenu, animated: true, completion: nil)
+        
     }
     
     func isValidEmail(email: String) -> Bool{
@@ -102,4 +128,10 @@ class RegisterViewController: UIViewController {
         })
     }
 
+    //Mark: UIImagePickerController delegate
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        self.avatarImage = (info[UIImagePickerControllerEditedImage] as! UIImage)
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
 }

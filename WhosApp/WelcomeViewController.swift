@@ -132,7 +132,7 @@ class WelcomeViewController: UIViewController {
     
     //Save user credential using IOS Keychain
     func completeSignIn(id: String){
-        KeychainWrapper.standard.set(id,forKey: KEY_UID);
+        //KeychainWrapper.standard.set(id,forKey: KEY_UID);
         //performSegue(withIdentifier: "goToFeed", sender: nil)
         
     }

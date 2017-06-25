@@ -36,6 +36,12 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Please let us user your location.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>we need your camera</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>we need your library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>we need your photo library</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<false/>
 </dict>
