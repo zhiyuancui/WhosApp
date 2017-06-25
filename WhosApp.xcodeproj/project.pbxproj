@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		784B3EB8E01F7E564C12289F /* Pods_WhosAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AE822A3932786F6F5B2BDB /* Pods_WhosAppTests.framework */; };
+		8FEF2A5A1EFF4EEC00BBE458 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF2A591EFF4EEC00BBE458 /* WelcomeViewController.swift */; };
+		8FEF2A5D1EFF5C3C00BBE458 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF2A5C1EFF5C3C00BBE458 /* RegisterViewController.swift */; };
 		8FF03E4C1EFF129000C2A9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF03E4B1EFF129000C2A9DC /* AppDelegate.swift */; };
 		8FF03E511EFF129000C2A9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF03E4F1EFF129000C2A9DC /* Main.storyboard */; };
 		8FF03E541EFF129000C2A9DC /* WhosApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FF03E521EFF129000C2A9DC /* WhosApp.xcdatamodeld */; };
@@ -21,7 +22,6 @@
 		8FF03E891EFF206700C2A9DC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF03E881EFF206700C2A9DC /* CoreLocation.framework */; };
 		8FF03E8B1EFF208900C2A9DC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF03E8A1EFF208900C2A9DC /* SystemConfiguration.framework */; };
 		8FF03E8D1EFF209200C2A9DC /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF03E8C1EFF209200C2A9DC /* PushKit.framework */; };
-		AECFF8E96E02A5C3983B399C /* Pods_WhosAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDAFFB08F3CB711A35CD790 /* Pods_WhosAppUITests.framework */; };
 		C71FECC63C27018C9E91B1F7 /* Pods_WhosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F08557BC2B3222114F0528A /* Pods_WhosApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +47,8 @@
 		3FF2DE46AA1D079C1F071CF3 /* Pods-WhosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhosApp/Pods-WhosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5F08557BC2B3222114F0528A /* Pods_WhosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		657E1B6239C94933DC68649B /* Pods-WhosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhosApp/Pods-WhosApp.release.xcconfig"; sourceTree = "<group>"; };
-		787E25C08CE276D2D106DEAC /* Pods-WhosAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhosAppTests/Pods-WhosAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FEF2A591EFF4EEC00BBE458 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8FEF2A5C1EFF5C3C00BBE458 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8FF03E481EFF129000C2A9DC /* WhosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF03E4B1EFF129000C2A9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FF03E501EFF129000C2A9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,9 +70,6 @@
 		8FF03E881EFF206700C2A9DC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8FF03E8A1EFF208900C2A9DC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8FF03E8C1EFF209200C2A9DC /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
-		B8770FCD4DD29D2B68070507 /* Pods-WhosAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhosAppUITests/Pods-WhosAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BA5E7441207C31E9FC22721F /* Pods-WhosAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhosAppUITests/Pods-WhosAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D3110184698AE98F3CB97725 /* Pods-WhosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhosAppTests/Pods-WhosAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		DDDAFFB08F3CB711A35CD790 /* Pods_WhosAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhosAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784B3EB8E01F7E564C12289F /* Pods_WhosAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AECFF8E96E02A5C3983B399C /* Pods_WhosAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +129,8 @@
 			children = (
 				8FF03E7F1EFF19E600C2A9DC /* Encryption */,
 				8FF03E4B1EFF129000C2A9DC /* AppDelegate.swift */,
+				8FEF2A591EFF4EEC00BBE458 /* WelcomeViewController.swift */,
+				8FEF2A5C1EFF5C3C00BBE458 /* RegisterViewController.swift */,
 				8FF03E4F1EFF129000C2A9DC /* Main.storyboard */,
 				8FF03E551EFF129000C2A9DC /* Assets.xcassets */,
 				8FF03E571EFF129000C2A9DC /* LaunchScreen.storyboard */,
@@ -190,10 +188,6 @@
 			children = (
 				3FF2DE46AA1D079C1F071CF3 /* Pods-WhosApp.debug.xcconfig */,
 				657E1B6239C94933DC68649B /* Pods-WhosApp.release.xcconfig */,
-				787E25C08CE276D2D106DEAC /* Pods-WhosAppTests.debug.xcconfig */,
-				D3110184698AE98F3CB97725 /* Pods-WhosAppTests.release.xcconfig */,
-				BA5E7441207C31E9FC22721F /* Pods-WhosAppUITests.debug.xcconfig */,
-				B8770FCD4DD29D2B68070507 /* Pods-WhosAppUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -225,12 +219,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FF03E761EFF129000C2A9DC /* Build configuration list for PBXNativeTarget "WhosAppTests" */;
 			buildPhases = (
-				565BB74323CFB2F9C476F6A5 /* [CP] Check Pods Manifest.lock */,
 				8FF03E5B1EFF129000C2A9DC /* Sources */,
 				8FF03E5C1EFF129000C2A9DC /* Frameworks */,
 				8FF03E5D1EFF129000C2A9DC /* Resources */,
-				0FBB4CA71A5D6B1600854643 /* [CP] Embed Pods Frameworks */,
-				F362C8D6FD49E13F16322EC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,12 +237,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FF03E791EFF129000C2A9DC /* Build configuration list for PBXNativeTarget "WhosAppUITests" */;
 			buildPhases = (
-				2EEC2B45A5F4AD9F548C1F26 /* [CP] Check Pods Manifest.lock */,
 				8FF03E661EFF129000C2A9DC /* Sources */,
 				8FF03E671EFF129000C2A9DC /* Frameworks */,
 				8FF03E681EFF129000C2A9DC /* Resources */,
-				76F08B21B153E102B8B0E1E7 /* [CP] Embed Pods Frameworks */,
-				342C1DC1D9736E9BBFB562EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,81 +343,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhosApp/Pods-WhosApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0FBB4CA71A5D6B1600854643 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhosAppTests/Pods-WhosAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2EEC2B45A5F4AD9F548C1F26 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		342C1DC1D9736E9BBFB562EB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhosAppUITests/Pods-WhosAppUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		565BB74323CFB2F9C476F6A5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		76F08B21B153E102B8B0E1E7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhosAppUITests/Pods-WhosAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9083E983E056ACCFB54C955B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -460,21 +373,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F362C8D6FD49E13F16322EC0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhosAppTests/Pods-WhosAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -483,7 +381,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FF03E871EFF1EF100C2A9DC /* Constants.swift in Sources */,
+				8FEF2A5A1EFF4EEC00BBE458 /* WelcomeViewController.swift in Sources */,
 				8FF03E821EFF1A5500C2A9DC /* RNCryptor.swift in Sources */,
+				8FEF2A5D1EFF5C3C00BBE458 /* RegisterViewController.swift in Sources */,
 				8FF03E541EFF129000C2A9DC /* WhosApp.xcdatamodeld in Sources */,
 				8FF03E4C1EFF129000C2A9DC /* AppDelegate.swift in Sources */,
 			);
@@ -668,7 +568,6 @@
 		};
 		8FF03E771EFF129000C2A9DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 787E25C08CE276D2D106DEAC /* Pods-WhosAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -683,7 +582,6 @@
 		};
 		8FF03E781EFF129000C2A9DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3110184698AE98F3CB97725 /* Pods-WhosAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -698,7 +596,6 @@
 		};
 		8FF03E7A1EFF129000C2A9DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA5E7441207C31E9FC22721F /* Pods-WhosAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WhosAppUITests/Info.plist;
@@ -712,7 +609,6 @@
 		};
 		8FF03E7B1EFF129000C2A9DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8770FCD4DD29D2B68070507 /* Pods-WhosAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WhosAppUITests/Info.plist;
