@@ -8,6 +8,8 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseStorage
+import FirebaseDatabase
 import MBProgressHUD
 import MobileCoreServices
 
@@ -91,12 +93,6 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate, 
     
     func register(email: String, password:String, username: String, avatarImage: UIImage?) {
         
-        if avatarImage == nil {
-            
-        } else {
-            //upload avatar image
-        }
-        
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: {(user, error) in
             MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
             if error != nil {
@@ -107,11 +103,45 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate, 
                 
             } else {
                 
-                //Success
+                //Success, Then try to upload Avatar Image
+                if avatarImage == nil {
+                    
+                } else {
+                    //upload avatar image
+                    let storageRef = FIRStorage.storage().reference().child((user?.uid)!+"avatar.png")
+                    if let uploadData = UIImagePNGRepresentation( avatarImage! ) {
+                        storageRef.put(uploadData, metadata: nil, completion: { (metadata, error) in
+                            if error != nil {
+                                print( error! )
+                                return
+                            } else {
+                                if let avatarUrl = metadata?.downloadURL()?.absoluteString{
+                                    let values = ["name": username, "email": email,"avatarImageUrl":avatarUrl]
+                                    self.registerUserInDB(withuid: (user?.uid)!, values: values as [String : AnyObject])
+                                }
+                            }
+                        })
+                    }
+                    
+                }
+                
+                
                 self.loginUser(email: email, password: password)
             }
         })
 
+    }
+    
+    private func registerUserInDB(withuid:String,values:[String: AnyObject]){
+        
+        let ref = FIRDatabase.database().reference(fromURL: FIRDatabaseRef)
+        let usersReference = ref.child("users").child(withuid)
+        usersReference.updateChildValues(values) { (error, ref) in
+            if error != nil {
+                print( error! )
+                return
+            }
+        }
     }
     
     func loginUser(email: String, password: String) {

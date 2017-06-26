@@ -300,11 +300,77 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="q7p-yX-aBZ" id="9kC-7O-cw5"/>
+                        <segue destination="VBv-15-JZK" kind="push" id="90w-Ak-x4B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdi-vR-aLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4087.1999999999998" y="-575.26236881559225"/>
+        </scene>
+        <!--Choose User-->
+        <scene sceneID="Ogl-bB-Wjh">
+            <objects>
+                <viewController id="VBv-15-JZK" customClass="ChooseUserViewController" customModule="WhosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BJ2-QJ-3t1"/>
+                        <viewControllerLayoutGuide type="bottom" id="2w6-jo-Msb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g07-vl-T1a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xk3-zx-lq2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="y3g-js-I4Q" customClass="FriendTableViewCell" customModule="WhosApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y3g-js-I4Q" id="Gpk-aG-SIQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Fh-VH-ipI">
+                                                    <rect key="frame" x="8" y="4" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N3-Bo-aIJ">
+                                                    <rect key="frame" x="66" y="19" width="293" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarImageView" destination="9Fh-VH-ipI" id="JBe-49-wAi"/>
+                                            <outlet property="nameLabel" destination="6N3-Bo-aIJ" id="5LD-Th-Mfi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="VBv-15-JZK" id="cQd-p2-3CN"/>
+                                    <outlet property="delegate" destination="VBv-15-JZK" id="ifB-iV-3gH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xk3-zx-lq2" secondAttribute="trailing" id="J4e-Hw-kIJ"/>
+                            <constraint firstItem="xk3-zx-lq2" firstAttribute="top" secondItem="g07-vl-T1a" secondAttribute="top" id="Kgl-iC-Nwa"/>
+                            <constraint firstItem="xk3-zx-lq2" firstAttribute="leading" secondItem="g07-vl-T1a" secondAttribute="leading" id="qUz-42-ckN"/>
+                            <constraint firstAttribute="bottom" secondItem="xk3-zx-lq2" secondAttribute="bottom" id="uTP-4p-ZZR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose User" id="HTO-ra-BuD"/>
+                    <connections>
+                        <outlet property="tableView" destination="xk3-zx-lq2" id="nBV-Jy-2VK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8z-ob-PaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4853.6000000000004" y="-575.26236881559225"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UE2-2C-RpB">

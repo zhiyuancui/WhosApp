@@ -161,3 +161,7 @@ public let kRED = "red"
 public let kGREEN = "green"
 
 public let kBLUE = "blue"
+
+
+//Firebase
+public let FIRDatabaseRef = "https://whosapp-cc3d7.firebaseio.com/"
